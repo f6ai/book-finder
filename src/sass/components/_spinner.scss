@@ -1,0 +1,19 @@
+.spinner {
+    // The height here is just for demo purposes
+    height: 40vh;  
+    position: relative;
+    
+    &::before {
+        animation: 2s linear infinite spinner;
+        border: solid 3px #eee;
+        border-bottom-color: $c-primary-2;
+        border-radius: 50%;
+        content: "";
+        height: 40px;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        width: 40px;
+    }
+}

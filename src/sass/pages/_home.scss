@@ -1,0 +1,36 @@
+.section-search {
+    height: 100%;
+    margin: 2rem 15rem;
+    display: block;
+
+    @include respond(big-desktop) {
+        margin: 2rem 30rem;
+    }
+
+    @include respond(medium-desktop) {
+        margin: 2rem 20rem;
+    }
+
+    @include respond(tab-port) {
+        margin: 2rem 12rem;
+    }
+
+    @include respond(tab-land-small) {
+        margin: 2rem 9rem;
+    }
+
+    @include respond(phone) {
+        margin: 2rem 5rem;
+    }
+    
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.section__pages {
+    height: 100%;
+    overflow: hidden;
+}
+
