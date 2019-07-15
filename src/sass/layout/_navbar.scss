@@ -1,0 +1,40 @@
+.nav {
+    width: 100%;
+    background-color: $c-grey-3;
+    overflow: auto; 
+    position: fixed;
+    z-index: 2;
+
+    &__link{
+        float: left;
+        padding: 1rem;
+        padding-right: 1.5rem;
+        color: $c-light-2;
+        text-decoration: none;
+
+        &:link,
+        &:visited {
+            text-decoration: none;
+        }
+        &:hover,
+        &:active {
+            color: $c-white;
+        }
+    }
+    &__icon {
+        font-size: 2.3rem;
+        margin-right: 0.7rem; 
+        color: $c-light-2;
+        vertical-align: middle;
+
+        &:hover,
+        &:active {
+            color: $c-white;
+        }
+    }
+
+    &__text {
+        font-size: $default-font-size;
+        vertical-align: middle;
+    }
+} 

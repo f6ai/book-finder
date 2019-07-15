@@ -1,0 +1,120 @@
+
+.form {
+
+    &--main {
+        display: block;
+        margin: 0 auto;
+        
+        @include respond(phone) {
+            width: 30rem;
+        }
+    }
+
+    &--sub {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 2rem;
+
+        @include respond(phone) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+
+    &__input {
+        font-family: inherit;
+        font-size: 1.5rem;
+        padding: 0.7rem;
+        margin: 0 0.5rem;
+        margin-bottom: 3rem;
+        border-radius: 2px;
+        border: 1px solid $c-grey-1;
+        transition: all .2s;
+
+        &--error {
+            font-size: 1.4rem;
+            color: $c-primary-2;
+            margin-top: -2.5rem;
+            margin-left: 0.7rem;
+            opacity: 0;
+            visibility: hidden;
+
+            @include respond(phone) {
+                margin-top: -1.5rem;
+            }
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($c-black, .1);
+            border-bottom: 2px solid $c-primary-1;
+        }
+
+        &:focus:invalid {
+            border-bottom: 2px solid $c-primary-2;
+        }
+
+        &::-webkit-input-placeholder {
+            color: $c-grey-3;
+        }
+
+        @include respond(phone) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__label {
+        display: block;
+        margin: 0.5rem 0.7rem;
+        font-size: 1.5rem;
+        color: $c-grey-3;
+        font-weight: 600;
+        transition: all .3s;
+
+        &:focus {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &__input:invalid + &__input--error {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+#query {
+    width: 100%;
+    min-width: 20rem;
+    
+    @include respond(phone) {
+        width: 30rem;
+    }
+}
+
+#author {
+    width: 40rem;
+
+    @include respond(phone) {
+        width: 30rem;
+    }
+}
+
+#ISBN {
+    width: 20rem;
+    
+    @include respond(phone) {
+        width: 30rem;
+    }
+
+}
+
+#lang {
+    width: 20rem;
+
+    @include respond(phone) {
+        width: 30rem;
+    }
+}

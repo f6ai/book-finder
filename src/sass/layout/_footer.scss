@@ -1,0 +1,41 @@
+.footer {
+    width: auto;
+    height: 20rem;
+    background-color: $c-grey-3;
+    color: $c-primary-3;
+
+    &__list {
+        list-style-type: none;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    &__item {
+        border-bottom: 1px solid $c-grey-1;
+        padding: 0.5rem;
+    }
+
+    &__link {
+        &,
+        &:active,
+        &:visited {
+            text-decoration: none;
+            color: $c-primary-3;
+        }
+        
+        &:hover {
+            color: $c-light-2;
+        }
+    }
+
+    &__copyright {
+        font-size: 1.4rem;
+        padding: 3rem;
+        text-align: center;
+
+        @include respond(phone) {
+            padding: 2rem;
+            padding-top: 3rem;
+        }
+    }
+}

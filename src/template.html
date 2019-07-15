@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather|Quicksand&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+    <title>BOOK FINDER</title>
+</head>
+
+<nav class="nav">
+    <a href="#" class="nav__link"><ion-icon class="nav__icon" name="home"></ion-icon></a>
+    <a href="#" class="nav__link"><ion-icon class="nav__icon"name="mail"></ion-icon><span class="nav__text">Contact us</span></a>
+    <a href="#" class="nav__link"><ion-icon class="nav__icon" name="help-circle"></ion-icon><span class="nav__text">About</span></a>
+</nav>
+<header class="header">
+    <div class="header__text-box">
+        <h1 class="heading-primary">
+            <span class="heading-primary--main">Book Finder</span><br>
+            <span class="heading-primary--sub">where you can easily find your favourite books</span>
+        </h1>
+    </div>
+</header>
+<body>    
+    <section class="section-search u-margin-top-small u-margin-bottom-huge">
+        <form action="#" class="form form--main">
+            <div class="form__group">
+                <label for="query" class="form__label">Keyword</label>
+                <input type="text" class="form__input query" placeholder="Search for books by keyword / title / author" id="query" required>
+                <div class="form__input--error" id="errorAlert">
+                    <p>Please fill out this field.</p>
+                </div>
+            </div>
+            <div class="form--sub">
+                <div class="form__group form--sub-item">
+                    <label for="author" class="form__label">Author</label>
+                    <input type="text" class="form__input author" placeholder="Author" id="author">
+                </div>
+                <div class="form__group form--sub-item">
+                    <label for="ISBN" class="form__label">ISBN</label>
+                    <input type="text" class="form__input ISBN" placeholder="ISBN" id="ISBN">
+                </div>
+                <div class="form__group form--sub-item">
+                    <label for="lang" class="form__label">Language</label>
+                    <select class="form__input form__input--lang" id=lang>
+                        <option id=none value="">-</option>
+                        <option id=en value="en" selected="selected">English</option>
+                        <option id=de value="de">German</option>
+                        <option id=fr value="fr">French</option>
+                        <option id=hu value="hu">Hungarian</option>
+                        <option id=es value="es">Spanish</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+        <div class="btn__container u-margin-bottom-small">
+            <a href="#" class="btn btn--search">Search</a>
+        </div>
+        <!--
+            <div class="spinner"></div>
+        -->
+    </section>
+
+    <section class="section-results">
+        <div class="section-results__error">
+            <p class="section-results__error--text">Sorry, we couldn't find anything. <span><ion-icon name="sad"class="section-results__error--icon"></ion-icon></span></p>
+        </div>
+        <!--
+        <div class="section-results__item">
+            <div class="result__img"><img id="result_img" src="#" alt="Cover picture of Hyperion"></div>
+            <div class="result__text">
+                <h2 class="result__text--title">Hyperion</h2>
+                <h3 class="result__text--author">Dan Simmons</h3>
+                <p class="result__text--description">A stunning tour de force filled with transcendent awe and wonder, Hyperion is a masterwork of science fiction that resonates with excitement and invention, the first volume in a remarkable epic by the multiple-award-winning author of ...</p>
+                <p class="result__text--review"><span>Reviewed: 4.7</p>
+                
+                <div class="result__btn">
+                    <a href="#" class="result__btn--details btn btn--details" target="_blank">More &rarr;</a>
+                </div>
+            </div>
+        </div>
+        -->
+    </section>
+
+    <section class="section__pages">
+        <!--
+        <div class="pages" id="pages">
+            <a href="#" class="btn btn--prev" id="prev">&larr; Previous </a>
+            <a href="#" class="btn btn--next" id="next">Next &rarr;</a>
+        </div>
+        <div class="pages--text" id="pages--text"><p>1 / 5 pages</p></div> 
+        -->
+    </section>
+    
+    <footer class="footer">
+        <div class="row">
+            <div class="col-1-of-2 footer__navigation">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">About</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                </ul>
+            </div>
+            <div class="col-1-of-2 footer__copyright">
+                <p class="footer__text">
+                    Built by <a href="#" class="footer__link">Fanni Szikszai</a>.
+                    Copyright &copy; by Fanni Szikszai. This page uses the <span><a class="footer__link" href="https://developers.google.com/books/docs/overview" target="_blank">Google Books API</a></span>.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
