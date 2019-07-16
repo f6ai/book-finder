@@ -21,10 +21,6 @@ const controlSearch = async () => {
         // 4. render the result to the UI
         clearSpinner();
         resView.renderResults(books);
-    } else {
-        // if something went wrong, display the error message
-        sectionResultsError.style.opacity = 1;
-        sectionResultsError.style.visibility = visible;
     }
 };
 

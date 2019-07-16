@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { apiKey } from '../config';
+import { elements } from './base';
 
 export const getBooks = async (query, author, isbn, lang) => {
     try {
@@ -8,5 +9,6 @@ export const getBooks = async (query, author, isbn, lang) => {
         return itemsArr;
     } catch(e) {
         console.log(e.response);
+        alert('Oops, something went wrong. Please try again later.');
     }
 };

@@ -4,10 +4,8 @@
     justify-content: center;
     margin: 5rem;
 
-    &__error {
-        opacity: 0;
-        visibility: hidden;
-
+    /* &__error {
+       
         &--icon {
             font-size: 2.2rem;
             color: $c-grey-3;
@@ -21,7 +19,7 @@
             text-align: center;
             vertical-align: middle;
         }
-    }
+    } */
 
     &__item {
         display: flex;
