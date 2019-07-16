@@ -1,6 +1,5 @@
 import axios from 'axios';
 import { apiKey } from '../config';
-import { elements } from './base';
 
 export const getBooks = async (query, author, isbn, lang) => {
     try {
